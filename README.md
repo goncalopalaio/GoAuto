@@ -16,7 +16,6 @@ You first have to run the InstrumentedTest.mainTest in Android Studio so the dev
 The program.auto file contains:
 
 ```
-
 tap_with_id("floating_action_button");
 
 var text = "";
@@ -34,20 +33,16 @@ write_text(text);
 tap_with_text("SAVE");
 
 press_back();
-
-
 ```
 
 Run in bash:
 
 ```
-
 # The program is passed as text to the device so currently you will have to escape some characters first.
 
 PROGRAM=$(cat program.auto)
 PROGRAM=$(printf "%q" $PROGRAM)
 adb shell am instrument -w -r -e debug false -e class 'com.gplio.goauto.InstrumentedTest#mainTest' -e program $PROGRAM com.gplio.goauto.test/androidx.test.runner.AndroidJUnitRunner
-
 ```
 
 This will run the following scenario:
