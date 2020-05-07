@@ -73,9 +73,7 @@ Currently super underbaked. The interpreted language is too simple and the bindi
 
 # Language
 
-The interpreter that is used to run the scripts started as a Lox clone from https://craftinginterpreters.com/ but it's currently changing to turn it into a friendlier language for scripts.
-
-com.gplio.goauto.InstrumentedTest injects methods into the interpreter while its starting, that will translate your function calls to UiAutomator methods
+The interpreter that is used to run the scripts started as a Lox kotlin implementation from https://craftinginterpreters.com/ but it's currently changing to turn it into a friendlier language for scripts.
 
 
 # Similar projects
